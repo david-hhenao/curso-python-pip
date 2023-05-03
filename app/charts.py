@@ -7,7 +7,8 @@ def generate_bar_chart():
   #ax = coordenas donde se va a empezar a graficar
   fig, ax = plt.subplots()
   ax.bar(label,values)
-  plt.show()
+  plt.savefig('bar.png')
+  plt.close()
 
 if __name__ == "__main__":
   generate_bar_chart()
